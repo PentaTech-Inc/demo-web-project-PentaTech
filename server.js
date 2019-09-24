@@ -31,4 +31,8 @@ app.get('/check-miguel', (req, res) => {
     res.send({ Success: 'Miguel checked in!' });
 });
 
+app.get('/check-chy', (req, res) => {
+    res.send({ Success: 'Chy checked in!' });
+});
+
 // Add personal get route below
