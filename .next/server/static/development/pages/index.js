@@ -111,7 +111,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_bootstrap_Nav__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react_bootstrap_Nav__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var bootstrap_dist_css_bootstrap_min_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! bootstrap/dist/css/bootstrap.min.css */ "./node_modules/bootstrap/dist/css/bootstrap.min.css");
 /* harmony import */ var bootstrap_dist_css_bootstrap_min_css__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(bootstrap_dist_css_bootstrap_min_css__WEBPACK_IMPORTED_MODULE_4__);
-var _jsxFileName = "/Users/miguel/Documents/Github/demo-web-project-PentaTech/components/Header.js";
+var _jsxFileName = "/Users/fabian/Documents/GitHub/demo-web-project-PentaTech/components/Header.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
@@ -174,7 +174,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _Header__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Header */ "./components/Header.js");
-var _jsxFileName = "/Users/miguel/Documents/Github/demo-web-project-PentaTech/components/Layout.js";
+var _jsxFileName = "/Users/fabian/Documents/GitHub/demo-web-project-PentaTech/components/Layout.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
@@ -240,7 +240,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_bootstrap_FormControl__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_bootstrap_FormControl__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var react_bootstrap_Button__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-bootstrap/Button */ "react-bootstrap/Button");
 /* harmony import */ var react_bootstrap_Button__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react_bootstrap_Button__WEBPACK_IMPORTED_MODULE_3__);
-var _jsxFileName = "/Users/miguel/Documents/Github/demo-web-project-PentaTech/components/SearchBar.js";
+var _jsxFileName = "/Users/fabian/Documents/GitHub/demo-web-project-PentaTech/components/SearchBar.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
@@ -318,7 +318,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var bootstrap_dist_css_bootstrap_min_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(bootstrap_dist_css_bootstrap_min_css__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! axios */ "axios");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_3__);
-var _jsxFileName = "/Users/miguel/Documents/Github/demo-web-project-PentaTech/pages/index.js";
+/* harmony import */ var react_bootstrap_Button__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-bootstrap/Button */ "react-bootstrap/Button");
+/* harmony import */ var react_bootstrap_Button__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(react_bootstrap_Button__WEBPACK_IMPORTED_MODULE_4__);
+var _jsxFileName = "/Users/fabian/Documents/GitHub/demo-web-project-PentaTech/pages/index.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 /**
@@ -330,26 +332,125 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
+
 const Home = props => {
   return __jsx(_components_Layout__WEBPACK_IMPORTED_MODULE_1__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 13
+      lineNumber: 14
     },
     __self: undefined
   }, __jsx("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 16
+      lineNumber: 17
     },
     __self: undefined
-  }, `Res: ${props.result}`));
+  }, `Res: ${props.result}`), __jsx("br", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 18
+    },
+    __self: undefined
+  }), __jsx(LoadingButton, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 19
+    },
+    __self: undefined
+  }));
+};
+/** Component for interactive button */
+
+
+const LoadingButton = () => {
+  const {
+    0: isLoading,
+    1: setLoading
+  } = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false);
+  const {
+    0: isClicked,
+    1: setClicked
+  } = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false);
+  const {
+    0: names,
+    1: setNames
+  } = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])([]);
+  Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
+    if (isLoading) {
+      checkIn().then(props => {
+        setNames(props.result);
+        setClicked(true);
+        setLoading(false);
+      });
+    }
+  }, [isLoading]);
+
+  const handleClick = () => setLoading(true);
+
+  return __jsx("div", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 43
+    },
+    __self: undefined
+  }, __jsx(react_bootstrap_Button__WEBPACK_IMPORTED_MODULE_4___default.a, {
+    variant: "primary",
+    disabled: isLoading,
+    onClick: !isLoading ? handleClick : null,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 44
+    },
+    __self: undefined
+  }, isLoading ? 'Loading…' : 'Check in'), isClicked ? __jsx("div", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 53
+    },
+    __self: undefined
+  }, __jsx("br", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 54
+    },
+    __self: undefined
+  }), names.map((name, index) => {
+    return __jsx("p", {
+      key: index,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 57
+      },
+      __self: undefined
+    }, name, __jsx("br", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 57
+      },
+      __self: undefined
+    }));
+  })) : null);
+}; // ADD YOUR GET ROUTE, YOUR NAME IN PARAM FOR FUNCTION, AND YOUR RESPONSE IN RETURN OBJECT
+
+
+const checkIn = async () => {
+  return axios__WEBPACK_IMPORTED_MODULE_3___default.a.all([axios__WEBPACK_IMPORTED_MODULE_3___default.a.get('http://localhost:5000/check-fabian'), axios__WEBPACK_IMPORTED_MODULE_3___default.a.get('http://localhost:5000/check-miguel')]).then(axios__WEBPACK_IMPORTED_MODULE_3___default.a.spread(function (fabian, miguel) {
+    return {
+      result: [fabian.data.Success, miguel.data.Success]
+    };
+  })).then().catch(error => {
+    console.error(error);
+    return {
+      result: 'Failed to check in members'
+    };
+  });
 };
 
 Home.getInitialProps = async () => {
   try {
     // call server at endpoint /search-title
-    const res = await axios__WEBPACK_IMPORTED_MODULE_3___default.a.get('http://localhost:5000/search-title'); // res.data is the JSON object returned which is { Success: ***data*** }
+    const res = await axios__WEBPACK_IMPORTED_MODULE_3___default.a.get('http://localhost:5000/ping'); // res.data is the JSON object returned which is { Success: ***data*** }
 
     return {
       result: res.data.Success
@@ -373,7 +474,7 @@ Home.getInitialProps = async () => {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/miguel/Documents/Github/demo-web-project-PentaTech/pages/index.js */"./pages/index.js");
+module.exports = __webpack_require__(/*! /Users/fabian/Documents/GitHub/demo-web-project-PentaTech/pages/index.js */"./pages/index.js");
 
 
 /***/ }),
