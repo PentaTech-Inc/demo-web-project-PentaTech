@@ -14,8 +14,9 @@ app.listen(port, () => console.log(`Listening on port ${port}`));
 
 /** 
  * Create GET route
- * @returns search result after calling both moview and show APIs
+ * @returns search result after calling both movie and show APIs
  */
 app.get('/search-title', (req, res) => {
-    res.send({ Success: 'Server API successfully called!' });
+    res.send({ Success: 'Server API successfully called! \n Miguel has been called too' });
+
 });
