@@ -70,8 +70,9 @@ const checkIn = async () => {
     return axios.all([
         axios.get('http://localhost:5000/check-fabian'),
         axios.get('http://localhost:5000/check-miguel'),
-    ]).then(axios.spread(function (fabian, miguel) {
-        return { result: [fabian.data.Success, miguel.data.Success] }
+        axios.get('http://localhost:5000/check-chy'),
+    ]).then(axios.spread(function (fabian, miguel, chy) {
+        return { result: [fabian.data.Success, miguel.data.Success, chy.data.Success] }
     })).then().catch(error => {
         console.error(error);
         return { result: 'Failed to check in members' }
