@@ -1,2 +1,2 @@
-# demo-web-project-PentaTech
-Our web framework implementation
+Demo Web Project using Nextjs
+
