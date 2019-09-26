@@ -18,16 +18,18 @@ const Home = props => {
             {/* <h1>Media Tracker</h1>
             <p>Home page</p> */}
             <p>{`Res: ${props.result}`}</p>
-            <br />
             <LoadingButton />
-            <h1></h1>
+            <br />
             {/* Fabian's call to endpoint for Assignment 4 */}
-            <img src='http://localhost:5000/qrcode' />
+            <div>
+                <h4>Using package 'qr-image' to generate QR code</h4>
+                <img src='http://localhost:5000/qrcode' />
+            </div>
 
             {/* Miguel's library image call */}
             <div>
-                <h4>next-images to add images to webpage</h4>
-                <img src={img} alt='logo' id='logoImage'/>
+                <h4>'next-images' to add images to webpage</h4>
+                <img src={img} alt='logo' id='logoImage' />
             </div>
         </Layout>
     );
