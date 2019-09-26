@@ -17,6 +17,9 @@ const Home = props => {
             <p>{`Res: ${props.result}`}</p>
             <br />
             <LoadingButton />
+            <h1></h1>
+            {/* Fabian's call to endpoint for Assignment 4 */}
+            <img src='http://localhost:5000/qrcode' />
         </Layout>
     );
 };

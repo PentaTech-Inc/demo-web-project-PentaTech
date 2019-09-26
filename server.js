@@ -9,6 +9,7 @@ const express = require('express');
 const cors = require('cors');
 const app = express();
 const port = process.env.port || 5000;
+const qr = require('qr-image');
 
 app.use(cors());
 
@@ -36,3 +37,17 @@ app.get('/check-chy', (req, res) => {
 });
 
 // Add personal get route below
+
+// ASSIGNMENT 4 ENDPOINTS (ADD YOUR OWN ENDPOINT AND RETURN SOMETHING YOUR LIB DOES)
+// Fabian's endpoint: returns a QR code generated using node package qr-image
+app.get('/qrcode', (req, res) => {
+    const text = 'We are PentaTech Inc';
+    try {
+        const img = qr.image(text);
+        res.writeHead(200, { 'Content-Type': 'image/png' });
+        img.pipe(res);
+    } catch (e) {
+        res.writeHead(414, { 'Content-Type': 'text/html' });
+        res.end('<h1>414 Request-URI Too Large</h1>');
+    }
+});

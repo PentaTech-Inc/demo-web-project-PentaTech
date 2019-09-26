@@ -10301,6 +10301,19 @@ var Home = function Home(props) {
       lineNumber: 19
     },
     __self: this
+  }), __jsx("h1", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 20
+    },
+    __self: this
+  }), __jsx("img", {
+    src: "http://localhost:5000/qrcode",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 22
+    },
+    __self: this
   }));
 };
 /** Component for interactive button */
@@ -10336,7 +10349,7 @@ var LoadingButton = function LoadingButton() {
   return __jsx("div", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 43
+      lineNumber: 46
     },
     __self: this
   }, __jsx(react_bootstrap_Button__WEBPACK_IMPORTED_MODULE_6___default.a, {
@@ -10345,19 +10358,19 @@ var LoadingButton = function LoadingButton() {
     onClick: !isLoading ? handleClick : null,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 44
+      lineNumber: 47
     },
     __self: this
   }, isLoading ? 'Loading…' : 'Check in'), isClicked ? __jsx("div", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 53
+      lineNumber: 56
     },
     __self: this
   }, __jsx("br", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 54
+      lineNumber: 57
     },
     __self: this
   }), names.map(function (name, index) {
@@ -10365,13 +10378,13 @@ var LoadingButton = function LoadingButton() {
       key: index,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 57
+        lineNumber: 60
       },
       __self: this
     }, name, __jsx("br", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 57
+        lineNumber: 60
       },
       __self: this
     }));
@@ -10389,9 +10402,9 @@ function () {
       while (1) {
         switch (_context.prev = _context.next) {
           case 0:
-            return _context.abrupt("return", axios__WEBPACK_IMPORTED_MODULE_5___default.a.all([axios__WEBPACK_IMPORTED_MODULE_5___default.a.get('http://localhost:5000/check-fabian'), axios__WEBPACK_IMPORTED_MODULE_5___default.a.get('http://localhost:5000/check-miguel')]).then(axios__WEBPACK_IMPORTED_MODULE_5___default.a.spread(function (fabian, miguel) {
+            return _context.abrupt("return", axios__WEBPACK_IMPORTED_MODULE_5___default.a.all([axios__WEBPACK_IMPORTED_MODULE_5___default.a.get('http://localhost:5000/check-fabian'), axios__WEBPACK_IMPORTED_MODULE_5___default.a.get('http://localhost:5000/check-miguel'), axios__WEBPACK_IMPORTED_MODULE_5___default.a.get('http://localhost:5000/check-chy')]).then(axios__WEBPACK_IMPORTED_MODULE_5___default.a.spread(function (fabian, miguel, chy) {
               return {
-                result: [fabian.data.Success, miguel.data.Success]
+                result: [fabian.data.Success, miguel.data.Success, chy.data.Success]
               };
             })).then()["catch"](function (error) {
               console.error(error);
