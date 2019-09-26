@@ -9,6 +9,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import axios from 'axios';
 import Button from 'react-bootstrap/Button';
 
+// Miguel image import library
+import img from './screamingsun.jpg';
+
 const Home = props => {
     return (
         <Layout>
@@ -20,6 +23,12 @@ const Home = props => {
             <h1></h1>
             {/* Fabian's call to endpoint for Assignment 4 */}
             <img src='http://localhost:5000/qrcode' />
+
+            {/* Miguel's library image call */}
+            <div>
+                <h4>next-images to add images to webpage</h4>
+                <img src={img} alt='logo' id='logoImage'/>
+            </div>
         </Layout>
     );
 };

@@ -18,7 +18,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_bootstrap_Nav__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react_bootstrap_Nav__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var bootstrap_dist_css_bootstrap_min_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! bootstrap/dist/css/bootstrap.min.css */ "./node_modules/bootstrap/dist/css/bootstrap.min.css");
 /* harmony import */ var bootstrap_dist_css_bootstrap_min_css__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(bootstrap_dist_css_bootstrap_min_css__WEBPACK_IMPORTED_MODULE_4__);
-var _jsxFileName = "/Users/fabian/Documents/GitHub/demo-web-project-PentaTech/components/Header.js";
+var _jsxFileName = "/Users/miguel/Documents/Github/demo-web-project-PentaTech/components/Header.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
@@ -81,7 +81,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _Header__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Header */ "./components/Header.js");
-var _jsxFileName = "/Users/fabian/Documents/GitHub/demo-web-project-PentaTech/components/Layout.js";
+var _jsxFileName = "/Users/miguel/Documents/Github/demo-web-project-PentaTech/components/Layout.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
@@ -147,7 +147,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_bootstrap_FormControl__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_bootstrap_FormControl__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var react_bootstrap_Button__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-bootstrap/Button */ "./node_modules/react-bootstrap/Button.js");
 /* harmony import */ var react_bootstrap_Button__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react_bootstrap_Button__WEBPACK_IMPORTED_MODULE_3__);
-var _jsxFileName = "/Users/fabian/Documents/GitHub/demo-web-project-PentaTech/components/SearchBar.js";
+var _jsxFileName = "/Users/miguel/Documents/Github/demo-web-project-PentaTech/components/SearchBar.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
@@ -5006,9 +5006,9 @@ module.exports = invariant;
 
 /***/ }),
 
-/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=%2FUsers%2Ffabian%2FDocuments%2FGitHub%2Fdemo-web-project-PentaTech%2Fpages%2Findex.js!./":
+/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=%2FUsers%2Fmiguel%2FDocuments%2FGithub%2Fdemo-web-project-PentaTech%2Fpages%2Findex.js!./":
 /*!***************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=%2FUsers%2Ffabian%2FDocuments%2FGitHub%2Fdemo-web-project-PentaTech%2Fpages%2Findex.js ***!
+  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=%2FUsers%2Fmiguel%2FDocuments%2FGithub%2Fdemo-web-project-PentaTech%2Fpages%2Findex.js ***!
   \***************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -10261,9 +10261,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_5__);
 /* harmony import */ var react_bootstrap_Button__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react-bootstrap/Button */ "./node_modules/react-bootstrap/Button.js");
 /* harmony import */ var react_bootstrap_Button__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(react_bootstrap_Button__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _screamingsun_jpg__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./screamingsun.jpg */ "./pages/screamingsun.jpg");
+/* harmony import */ var _screamingsun_jpg__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_screamingsun_jpg__WEBPACK_IMPORTED_MODULE_7__);
 
 
-var _jsxFileName = "/Users/fabian/Documents/GitHub/demo-web-project-PentaTech/pages/index.js";
+var _jsxFileName = "/Users/miguel/Documents/Github/demo-web-project-PentaTech/pages/index.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement;
 
 /**
@@ -10274,47 +10276,70 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement;
 
 
 
+ // Miguel image import library
+
 
 
 var Home = function Home(props) {
   return __jsx(_components_Layout__WEBPACK_IMPORTED_MODULE_3__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 14
+      lineNumber: 17
     },
     __self: this
   }, __jsx("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 17
+      lineNumber: 20
     },
     __self: this
   }, "Res: ".concat(props.result)), __jsx("br", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 18
+      lineNumber: 21
     },
     __self: this
   }), __jsx(LoadingButton, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 19
+      lineNumber: 22
     },
     __self: this
   }), __jsx("h1", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 20
+      lineNumber: 23
     },
     __self: this
   }), __jsx("img", {
     src: "http://localhost:5000/qrcode",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 22
+      lineNumber: 25
     },
     __self: this
-  }));
+  }), __jsx("div", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 28
+    },
+    __self: this
+  }, __jsx("h4", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 29
+    },
+    __self: this
+  }, "next-images to add images to webpage"), __jsx("img", {
+    src: _screamingsun_jpg__WEBPACK_IMPORTED_MODULE_7___default.a,
+    alt: "logo",
+    id: "logoImage",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 30
+    },
+    __self: this
+  })));
 };
 /** Component for interactive button */
 
@@ -10349,7 +10374,7 @@ var LoadingButton = function LoadingButton() {
   return __jsx("div", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 46
+      lineNumber: 55
     },
     __self: this
   }, __jsx(react_bootstrap_Button__WEBPACK_IMPORTED_MODULE_6___default.a, {
@@ -10358,19 +10383,19 @@ var LoadingButton = function LoadingButton() {
     onClick: !isLoading ? handleClick : null,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 47
+      lineNumber: 56
     },
     __self: this
   }, isLoading ? 'Loading…' : 'Check in'), isClicked ? __jsx("div", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 56
+      lineNumber: 65
     },
     __self: this
   }, __jsx("br", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 57
+      lineNumber: 66
     },
     __self: this
   }), names.map(function (name, index) {
@@ -10378,13 +10403,13 @@ var LoadingButton = function LoadingButton() {
       key: index,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 60
+        lineNumber: 69
       },
       __self: this
     }, name, __jsx("br", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 60
+        lineNumber: 69
       },
       __self: this
     }));
@@ -10465,14 +10490,25 @@ _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(f
 
 /***/ }),
 
+/***/ "./pages/screamingsun.jpg":
+/*!********************************!*\
+  !*** ./pages/screamingsun.jpg ***!
+  \********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/_next/static/images/screamingsun-9c8ca7498b8da993c30f05ec794fb46f.jpg";
+
+/***/ }),
+
 /***/ 0:
 /*!*******************************************************************************************************************************************************!*\
-  !*** multi next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2Ffabian%2FDocuments%2FGitHub%2Fdemo-web-project-PentaTech%2Fpages%2Findex.js ***!
+  !*** multi next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2Fmiguel%2FDocuments%2FGithub%2Fdemo-web-project-PentaTech%2Fpages%2Findex.js ***!
   \*******************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2Ffabian%2FDocuments%2FGitHub%2Fdemo-web-project-PentaTech%2Fpages%2Findex.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=%2FUsers%2Ffabian%2FDocuments%2FGitHub%2Fdemo-web-project-PentaTech%2Fpages%2Findex.js!./");
+module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2Fmiguel%2FDocuments%2FGithub%2Fdemo-web-project-PentaTech%2Fpages%2Findex.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=%2FUsers%2Fmiguel%2FDocuments%2FGithub%2Fdemo-web-project-PentaTech%2Fpages%2Findex.js!./");
 
 
 /***/ }),
