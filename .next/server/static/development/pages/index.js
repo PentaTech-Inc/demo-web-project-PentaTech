@@ -111,7 +111,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_bootstrap_Nav__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react_bootstrap_Nav__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var bootstrap_dist_css_bootstrap_min_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! bootstrap/dist/css/bootstrap.min.css */ "./node_modules/bootstrap/dist/css/bootstrap.min.css");
 /* harmony import */ var bootstrap_dist_css_bootstrap_min_css__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(bootstrap_dist_css_bootstrap_min_css__WEBPACK_IMPORTED_MODULE_4__);
-var _jsxFileName = "/Users/fabian/Documents/GitHub/demo-web-project-PentaTech/components/Header.js";
+var _jsxFileName = "/Users/miguel/Documents/Github/demo-web-project-PentaTech/components/Header.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
@@ -174,7 +174,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _Header__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Header */ "./components/Header.js");
-var _jsxFileName = "/Users/fabian/Documents/GitHub/demo-web-project-PentaTech/components/Layout.js";
+var _jsxFileName = "/Users/miguel/Documents/Github/demo-web-project-PentaTech/components/Layout.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
@@ -240,7 +240,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_bootstrap_FormControl__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_bootstrap_FormControl__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var react_bootstrap_Button__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-bootstrap/Button */ "react-bootstrap/Button");
 /* harmony import */ var react_bootstrap_Button__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react_bootstrap_Button__WEBPACK_IMPORTED_MODULE_3__);
-var _jsxFileName = "/Users/fabian/Documents/GitHub/demo-web-project-PentaTech/components/SearchBar.js";
+var _jsxFileName = "/Users/miguel/Documents/Github/demo-web-project-PentaTech/components/SearchBar.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
@@ -320,7 +320,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var react_bootstrap_Button__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-bootstrap/Button */ "react-bootstrap/Button");
 /* harmony import */ var react_bootstrap_Button__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(react_bootstrap_Button__WEBPACK_IMPORTED_MODULE_4__);
-var _jsxFileName = "/Users/fabian/Documents/GitHub/demo-web-project-PentaTech/pages/index.js";
+/* harmony import */ var _screamingsun_jpg__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./screamingsun.jpg */ "./pages/screamingsun.jpg");
+/* harmony import */ var _screamingsun_jpg__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_screamingsun_jpg__WEBPACK_IMPORTED_MODULE_5__);
+var _jsxFileName = "/Users/miguel/Documents/Github/demo-web-project-PentaTech/pages/index.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 /**
@@ -331,34 +333,57 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
+ // Miguel image import library
+
 
 
 const Home = props => {
   return __jsx(_components_Layout__WEBPACK_IMPORTED_MODULE_1__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 14
+      lineNumber: 17
     },
     __self: undefined
   }, __jsx("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 17
+      lineNumber: 20
     },
     __self: undefined
   }, `Res: ${props.result}`), __jsx("br", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 18
+      lineNumber: 21
     },
     __self: undefined
   }), __jsx(LoadingButton, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 19
+      lineNumber: 22
     },
     __self: undefined
-  }));
+  }), __jsx("div", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 27
+    },
+    __self: undefined
+  }, __jsx("h3", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 28
+    },
+    __self: undefined
+  }, "next-images to add images to webpage "), __jsx("img", {
+    src: _screamingsun_jpg__WEBPACK_IMPORTED_MODULE_5___default.a,
+    alt: "logo",
+    id: "logoImage",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 29
+    },
+    __self: undefined
+  })));
 };
 /** Component for interactive button */
 
@@ -391,7 +416,7 @@ const LoadingButton = () => {
   return __jsx("div", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 43
+      lineNumber: 59
     },
     __self: undefined
   }, __jsx(react_bootstrap_Button__WEBPACK_IMPORTED_MODULE_4___default.a, {
@@ -400,19 +425,19 @@ const LoadingButton = () => {
     onClick: !isLoading ? handleClick : null,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 44
+      lineNumber: 60
     },
     __self: undefined
   }, isLoading ? 'Loading…' : 'Check in'), isClicked ? __jsx("div", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 53
+      lineNumber: 71
     },
     __self: undefined
   }, __jsx("br", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 54
+      lineNumber: 72
     },
     __self: undefined
   }), names.map((name, index) => {
@@ -420,24 +445,26 @@ const LoadingButton = () => {
       key: index,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 57
+        lineNumber: 75
       },
       __self: undefined
     }, name, __jsx("br", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 57
+        lineNumber: 75
       },
       __self: undefined
     }));
-  })) : null);
+  })) : null)
+  /* miguel picture */
+  ;
 }; // ADD YOUR GET ROUTE, YOUR NAME IN PARAM FOR FUNCTION, AND YOUR RESPONSE IN RETURN OBJECT
 
 
 const checkIn = async () => {
-  return axios__WEBPACK_IMPORTED_MODULE_3___default.a.all([axios__WEBPACK_IMPORTED_MODULE_3___default.a.get('http://localhost:5000/check-fabian'), axios__WEBPACK_IMPORTED_MODULE_3___default.a.get('http://localhost:5000/check-miguel')]).then(axios__WEBPACK_IMPORTED_MODULE_3___default.a.spread(function (fabian, miguel) {
+  return axios__WEBPACK_IMPORTED_MODULE_3___default.a.all([axios__WEBPACK_IMPORTED_MODULE_3___default.a.get('http://localhost:5000/check-fabian'), axios__WEBPACK_IMPORTED_MODULE_3___default.a.get('http://localhost:5000/check-miguel'), axios__WEBPACK_IMPORTED_MODULE_3___default.a.get('http://localhost:5000/check-chy')]).then(axios__WEBPACK_IMPORTED_MODULE_3___default.a.spread(function (fabian, miguel, chy) {
     return {
-      result: [fabian.data.Success, miguel.data.Success]
+      result: [fabian.data.Success, miguel.data.Success, chy.data.Success]
     };
   })).then().catch(error => {
     console.error(error);
@@ -467,6 +494,17 @@ Home.getInitialProps = async () => {
 
 /***/ }),
 
+/***/ "./pages/screamingsun.jpg":
+/*!********************************!*\
+  !*** ./pages/screamingsun.jpg ***!
+  \********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/_next/static/images/screamingsun-9c8ca7498b8da993c30f05ec794fb46f.jpg";
+
+/***/ }),
+
 /***/ 3:
 /*!******************************!*\
   !*** multi ./pages/index.js ***!
@@ -474,7 +512,7 @@ Home.getInitialProps = async () => {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/fabian/Documents/GitHub/demo-web-project-PentaTech/pages/index.js */"./pages/index.js");
+module.exports = __webpack_require__(/*! /Users/miguel/Documents/Github/demo-web-project-PentaTech/pages/index.js */"./pages/index.js");
 
 
 /***/ }),

@@ -4818,7 +4818,7 @@ function connect(options) {
       error.name = err.name;
       error.stack = err.stack; // __NEXT_DIST_DIR is provided by webpack
 
-      (0, _sourceMapSupport.rewriteStacktrace)(error, "/Users/fabian/Documents/GitHub/demo-web-project-PentaTech/.next");
+      (0, _sourceMapSupport.rewriteStacktrace)(error, "/Users/miguel/Documents/Github/demo-web-project-PentaTech/.next");
       return error;
     }
   };

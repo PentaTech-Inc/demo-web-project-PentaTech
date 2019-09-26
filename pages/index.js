@@ -9,6 +9,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import axios from 'axios';
 import Button from 'react-bootstrap/Button';
 
+// Miguel image import library
+import img from './screamingsun.jpg';
+
 const Home = props => {
     return (
         <Layout>
@@ -17,9 +20,22 @@ const Home = props => {
             <p>{`Res: ${props.result}`}</p>
             <br />
             <LoadingButton />
+
+
+            {/* using next-images to import pictures into webpage 
+            */}
+            <div>
+                <h3>next-images to add images to webpage </h3>
+                <img src={img} alt='logo' id='logoImage'/>
+            </div>
         </Layout>
+
     );
 };
+
+
+
+
 
 /** Component for interactive button */
 const LoadingButton = () => {
@@ -48,6 +64,8 @@ const LoadingButton = () => {
             >
                 {isLoading ? 'Loading…' : 'Check in'}
             </Button>
+
+
             {
                 isClicked ?
                     <div>
@@ -62,6 +80,7 @@ const LoadingButton = () => {
                     null
             }
         </div>
+            /* miguel picture */ 
     );
 }
 
