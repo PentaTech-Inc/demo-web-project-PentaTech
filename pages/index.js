@@ -23,6 +23,7 @@ const Home = props => {
             {/* Fabian's call to endpoint for Assignment 4 */}
             <div>
                 <h4>Using package 'qr-image' to generate QR code</h4>
+                <p style={{ marginBottom: -5 }}>Scan with your phone to see the message</p>
                 <img src='http://localhost:5000/qrcode' />
             </div>
 
@@ -31,7 +32,7 @@ const Home = props => {
                 <h4>'next-images' to add images to webpage</h4>
                 <img src={img} alt='logo' id='logoImage' />
             </div>
-        </Layout>
+        </Layout >
     );
 };
 
