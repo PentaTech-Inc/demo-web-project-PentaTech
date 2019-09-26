@@ -10,8 +10,9 @@ const cors = require('cors');
 const app = express();
 const port = process.env.port || 5000;
 const qr = require('qr-image');
-
 app.use(cors());
+
+var moment = require('moment');
 
 // report server is up and running
 app.listen(port, () => console.log(`Listening on port ${port}`));
@@ -21,7 +22,11 @@ app.listen(port, () => console.log(`Listening on port ${port}`));
  * @returns search result after calling both movie and show APIs
  */
 app.get('/ping', (req, res) => {
-    res.send({ Success: 'Server API successfully called!' });
+    res.send({ Success: 'Server API successfully called at ' + moment().format()});
+});
+
+app.get('/check-fabian', (req, res) => {
+    res.send({ Success: 'Fabian checked in!' });
 });
 
 app.get('/check-fabian', (req, res) => {
@@ -51,3 +56,4 @@ app.get('/qrcode', (req, res) => {
         res.end('<h1>414 Request-URI Too Large</h1>');
     }
 });
+
